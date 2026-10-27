@@ -1,0 +1,10 @@
+kernel
+playwright
+beautifulsoup4
+requests
+chromadb
+numpy
+openai
+anthropic
+python-dotenv
+mcp>=2.0.0
