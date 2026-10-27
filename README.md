@@ -2,7 +2,7 @@
 
 **The old books saw it coming.** [kernel](https://kernel.sh)'s cloud browsers read the last few days of news. Then a GraphRAG library of the books I've read answers each story with the two passages that best anticipated it.
 
-- **Live page:** the static showcase in `public/`, deployed on Vercel
+- **Live page:** [onlychr.is/kernel-news-oracle](https://onlychr.is/kernel-news-oracle), the static showcase in `public/`, deployed on Vercel
 - **The library itself:** [onlychr.is/raglib](https://onlychr.is/raglib) (book links on the page open it at the cited passage)
 
 ## How it works
