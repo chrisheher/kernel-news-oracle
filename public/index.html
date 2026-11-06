@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Old Books Saw It Coming</title>
-<meta name="description" content="kernel's cloud browsers read the last few days of news; a GraphRAG library of old books answers each story with the passages that anticipated it.">
+<meta name="description" content="Cloud browsers read the last few days of news; a GraphRAG library of old books answers each story with the passages that anticipated it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,700;0,900;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -73,9 +73,9 @@
 <main class="news" id="news">
   <header class="news-head">
     <h1 class="news-h1">The old books saw it coming</h1>
-    <p class="news-lede"><b>How can kernel use a library of old crusty books to provide context about current events?</b> By matching news stories to passages and summaries in my GraphRAG library, this api shows that if history doesn’t repeat (or even rhyme), it certainly resonates.</p>
+    <p class="news-lede"><b>How can a library of old crusty books provide context about current events?</b> By matching news stories to passages and summaries in my GraphRAG library, this api shows that if history doesn’t repeat (or even rhyme), it certainly resonates.</p>
     <ol class="news-steps">
-      <li><span class="news-labelcaps">01 · Read</span><b>kernel browsers crawl <span id="nSites">8</span> news sites</b>One stealth cloud browser, driven by Playwright, reads <span id="nStories">the</span> recent stories.</li>
+      <li><span class="news-labelcaps">01 · Read</span><b>Cloud browsers crawl <span id="nSites">8</span> news sites</b>One stealth cloud browser, driven by Playwright, reads <span id="nStories">the</span> recent stories.</li>
       <li><span class="news-labelcaps">02 · Match</span><b>Embeddings search the library</b>Each story is compared with ~1,600 passages from ~230 literary works in my library.</li>
       <li><span class="news-labelcaps">03 · Explain</span><b>Claude writes each connection</b>One plain sentence on what the old passage anticipates or reframes.</li>
     </ol>
@@ -141,7 +141,7 @@
       </footer>`);
   }
 
-  // Relative to the page's own path, so it works at the site root and at onlychr.is/kernel-news-oracle.
+  // Relative to the page's own path, so it works at the site root and at onlychr.is/old-books.
   fetch(location.pathname.replace(/\/?$/, '/') + 'news.json')
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(render)
